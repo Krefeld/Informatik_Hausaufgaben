@@ -1,4 +1,4 @@
-public class Test_q_s {
+public class main {
     public static void main(String[] args) {
         Stack a = new Stack();
         Queue b = new Queue();
