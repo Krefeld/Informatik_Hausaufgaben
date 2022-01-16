@@ -46,5 +46,22 @@ public class Starter {
         b.show();
         c.show();
         // c wird nicht mehr ausgegeben, weil die Liste leer ist.
+
+
+        //get: input = Knoten; Output = Wert an diesem Knoten
+
+        
+        System.out.println();
+        System.out.println(b.valueOF(0) + " " + b.valueOF(1) + " " + b.valueOF(2));
+        List d = new List();
+        System.out.println();
+
+        // Output: eine List von untergrenze inklusive bis obergrenze exklusiv
+        d = b.subList(0, 2);
+        d.show();
+        System.out.println();
+        //leert die Liste
+        d.clear();
+        d.show();
     }
 }
