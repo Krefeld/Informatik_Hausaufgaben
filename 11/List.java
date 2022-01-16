@@ -190,4 +190,39 @@ public class List {
         }
         return counter;
     }
+
+    public void clear(){
+        first = last = act = null;
+    }
+
+    public Knoten KnotenOF(int index){
+        if(index > size())
+            return null;
+        Knoten temp;
+        temp = first;
+        for(int i = 0; i < index; ++i){
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    public Object get(Knoten in){
+        Knoten i;
+        for(i = first; i != in; i = i.next){
+
+        }
+        return i.wert;
+    }
+
+    public Object valueOF(int Index){
+        return get(KnotenOF(Index));
+    }
+
+    public List subList(int start, int end){
+        List neu = new List();
+        for(Knoten i = KnotenOF(start); i != KnotenOF(end); i = i.next){
+            neu.append(i.wert);    
+        }
+        return neu;
+    }
 }
