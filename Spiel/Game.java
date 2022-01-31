@@ -34,7 +34,6 @@ public class Start {
     static boolean beforeGame = true;
 
     static public void main(String[] args) {
-        // boolean stilPlay = true;
         // moveP2();
         f = new JFrame("Auswahl");
         if(tatik == 0){
@@ -90,7 +89,6 @@ public class Start {
         return true;
     }
 
-    //return: true if the winner is P1 else: false
     static boolean winnerP1(){
         for(int i : player1){
             if(i != 7){
@@ -138,8 +136,6 @@ public class Start {
     static void moveP2(){
         // 1 => Tatik: nimmt immer die Nummer mit der höchsten Anzahl
         // 2 => Tatik: nimmt die Zahl mit der niedriegsten Wahr. und die höchsten Anzahl
-        // int choose = 0;
-        // int choose_index = 0;
         Wurfel a = new Wurfel();
         a.erzeugen();
         int arr[] = new int[12];
@@ -169,25 +165,6 @@ public class Start {
                     player2[big] = 7;
             }
         }
-        
-        // int index = 0;
-        // for(int i : arr){
-        //     //i != 0 && player2[index] + i != 7
-        //     if(i != 0 && player2[index] != 7){
-        //         // choose_index = index+1;
-        //         // choose = i;
-        //         player2[index] += i;
-        //         if(player2[index] > 7)
-        //             player2[index] = 7;
-        //         break;    
-        //     }
-        //     ++index;
-        // }
-        // index = 0;
-        // for(int i : player2){
-        //     ++index;
-        //     System.out.println(index + "  " + i);
-        // }
     }
 
     static void tabelleAusgeben() {
@@ -375,7 +352,7 @@ public class Start {
         }
     }
 
-    //returns true if value at player1[index] != 7 
+   
     static boolean setButton(int index){
         System.out.println(player1[index]);
         if(player1[index] == 7){
