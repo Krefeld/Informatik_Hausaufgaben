@@ -12,9 +12,7 @@ public class List {
         }
     }
 
-    Knoten act;
-    Knoten first;
-    Knoten last;
+   Knoten act, first, last;
 
     public List() {
         act = null;
